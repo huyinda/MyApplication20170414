@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myapplication.MainActivity">
+
+    <EditText
+        android:id="@+id/edit_userName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请输入用户名"
+        android:layout_marginLeft="6dp"
+        />
+    <EditText
+        android:id="@+id/edit_psw"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请输入密码"
+        android:layout_below="@+id/edit_userName"
+        android:layout_marginLeft="6dp"/>
+
+    <Button
+        android:id="@+id/btn_resiger"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/btn_login"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/edit_psw"
+        android:text="注册"/>
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btn_resiger"
+        android:text="显示登录用户的信息"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:text="登录"
+        android:layout_below="@+id/edit_psw"
+        android:layout_alignLeft="@+id/edit_psw"
+        android:layout_alignStart="@+id/edit_psw"
+        android:layout_marginStart="16dp" />
+</RelativeLayout>
