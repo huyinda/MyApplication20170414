@@ -77,6 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void login() {
+        //添加了修改代码
         String userName = edit_userName.getText().toString();
         String editPsw = edit_psw.getText().toString();
         BmobQuery<Person> bmobQuery = new BmobQuery<Person>();
